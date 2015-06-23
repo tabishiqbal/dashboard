@@ -1,0 +1,318 @@
+@font-face {
+  font-family: myFont;
+  src: url(fonts/AvenirLTStd-Black.otf);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #6c757e;
+}
+
+.canvas {
+  padding-right: 50px;
+}
+
+
+.big-stats {
+  background-color: #f6f6f6;
+  padding-left: 10%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 2px;
+}
+
+
+.stats-1 h3 {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+}
+.stats-1 {
+  border-left: 3px solid #91c46b;
+  line-height: 5px;
+}
+
+.stats-2 h3 {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+}
+
+.stats-1 p {
+  color: #a5acb4;
+}
+
+.stats-2 p {
+  color: #a5acb4;
+}
+
+.stats-3 p {
+  color: #a5acb4;
+}
+
+.stats-3 h3 {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+}
+
+.stats-2 {
+  border-left: 3px solid #287e7e;
+  line-height: 5px;
+}
+
+.stats-3 {
+  border-left: 3px solid #f15822;
+  line-height: 5px;
+}
+
+.search-bar {
+  background-color: #4b5056;
+  border-color: #4b5056;
+  color: #fff;
+}
+
+/* enable absolute positioning */
+.inner-addon {
+    position: relative;
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+  color: #6c757e;
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  0px;}
+
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+
+
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  background-color: #f2f2f2;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  font-family: 'Nunito', sans-serif;
+}
+
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+  padding-bottom: 10px;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+}
+
+.navbar-inverse {
+  background-color: #34383c;
+  border-color: #34383c;
+}
+
+.navbar-nav {
+  padding-left: 15px;
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar {
+  display: none;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 49px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #91c46b;
+    border-right: 1px solid #eee;
+    width: 80px;
+  }
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 27px;
+  font-size: 25px;
+  color: #57893e;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #30572a;
+  /*background-color: #428bca;*/
+}
+
+
+/*
+ * Main content
+ */
+
+ .page-breadcrumb {
+   background-color: #fff;
+   padding-left: 5%;
+   -webkit-box-shadow: 0px 3px 4px 0px rgba(230,229,229,1);
+   -moz-box-shadow: 0px 3px 4px 0px rgba(230,229,229,1);
+   box-shadow: 0px 3px 4px 0px rgba(230,229,229,1);
+ }
+
+ @media (min-width: 768px) {
+   .page-breadcrumb{
+     /*padding-right: 40px;*/
+     padding-left: 5%;
+     margin-left: 2%;
+   }
+ }
+
+.main {
+  padding: 20px;
+  padding-right: 10px;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 55px;
+    padding-left: 10%;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+
+}
+
+.main .page-heading {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 15px;
+}
+
+.page-heading {
+  font-size: 1.7em;
+  padding-bottom: 10px;
+}
+
+
+.breadcrumb h1 {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+
+.player-info {
+  margin-top: 20px;
+  margin-left: 5px;
+}
+@media (min-width: 768px) {
+  .player-info {
+    margin-left: -5px;
+  }
+}
+
+
+/*Recent Players*/
+
+.user-info {
+  padding: 5px;
+}
+
+.user-info h5 {
+  font-size: 18px;
+  color: #6c757e;
+}
+
+.user-info p {
+  color: #a6aaae;
+}
+
+.user-avatar {
+	float: left;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	margin-right: 10px;
+  display: inline-block;
+}
+
+#mojo {
+  margin-top: 40px;
+}
+
+.user-data {
+  margin-top: 40px;
+}
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+
+ #canvas .circle {
+  display: inline-block;
+  margin: 1em;
+}
+
+.placeholders {
+  margin-bottom: 30px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.placeholders h4 {
+  text-size: 14px;
+}
+/*@media (min-width: 768px) {
+  .placeholders h4 {
+    margin-bottom: 0;
+    text-align: center;
+  }
+}*/
+
+.placeholder h3 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.placeholder {
+  margin-bottom: 20px;
+  display: inline-block;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
